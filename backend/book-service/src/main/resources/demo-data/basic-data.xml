@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+    <!-- AUTHORS -->
+    <author uuid="11111111-1111-1111-1111-111111111111" name="J.K. Rowling" description="British author of Harry Potter series"/>
+    <author uuid="22222222-2222-2222-2222-222222222222" name="George R.R. Martin" description="American author of A Song of Ice and Fire"/>
+
+    <!-- BOOKS -->
+    <book uuid="aaaaaaa1-aaaa-aaaa-aaaa-aaaaaaaaaaa1" title="Harry Potter and the Philosopher's Stone"
+          isbn="9780747532699" description="First book in the Harry Potter series"
+          price="19.99" image_url="https://example.com/hp1.jpg"/>
+
+    <book uuid="aaaaaaa2-aaaa-aaaa-aaaa-aaaaaaaaaaa2" title="A Game of Thrones"
+          isbn="9780553103540" description="First book in A Song of Ice and Fire"
+          price="24.99" image_url="https://example.com/got1.jpg"/>
+
+    <!-- BOOK-AUTHOR JOIN TABLE -->
+    <book_author book_uuid="aaaaaaa1-aaaa-aaaa-aaaa-aaaaaaaaaaa1" author_uuid="11111111-1111-1111-1111-111111111111"/>
+    <book_author book_uuid="aaaaaaa2-aaaa-aaaa-aaaa-aaaaaaaaaaa2" author_uuid="22222222-2222-2222-2222-222222222222"/>
+
+    <!-- BOOK TYPES (ENUMS as strings) -->
+    <book_book_type book_uuid="aaaaaaa1-aaaa-aaaa-aaaa-aaaaaaaaaaa1" book_type="PAPERBACK"/>
+    <book_book_type book_uuid="aaaaaaa1-aaaa-aaaa-aaaa-aaaaaaaaaaa1" book_type="AUDIO_BOOK"/>
+
+    <book_book_type book_uuid="aaaaaaa2-aaaa-aaaa-aaaa-aaaaaaaaaaa2" book_type="PAPERBACK"/>
+    <book_book_type book_uuid="aaaaaaa2-aaaa-aaaa-aaaa-aaaaaaaaaaa2" book_type="EBOOK"/>
+
+</dataset>
